@@ -1,0 +1,93 @@
+.book-container {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  @keyframes initAnimation {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(-30deg);
+    }
+  }
+  
+  .book {
+    top: 20px;
+    width: 100px;
+    height: 150px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(-30deg);
+    transition: 1s ease;
+    animation: 1s ease 0s 1 initAnimation;
+    perspective: 700px;
+  }
+  
+  .book:hover {
+    transform: rotateY(0deg);
+  }
+  
+  .book > :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    width: 100px;
+    height: 150px;
+    transform: translateZ(14px);
+    background-color: #01060f;
+    border-radius: 0 1px 1px 0;
+    box-shadow: 2.5px 2.5px 10px #666;
+  }
+
+  
+  
+  .book::before {
+    position: absolute;
+    content: ' ';
+    background-color: blue;
+    left: 0;
+    top: 1.5px;
+    width: 27px;
+    height: 143px;
+    transform: translateX(83px) rotateY(78deg);
+    background: linear-gradient(90deg, 
+      #fff 0%,
+      #f9f9f9 5%,
+      #fff 10%,
+      #f9f9f9 15%,
+      #fff 20%,
+      #f9f9f9 25%,
+      #fff 30%,
+      #f9f9f9 35%,
+      #fff 40%,
+      #f9f9f9 45%,
+      #fff 50%,
+      #f9f9f9 55%,
+      #fff 60%,
+      #f9f9f9 65%,
+      #fff 70%,
+      #f9f9f9 75%,
+      #fff 80%,
+      #f9f9f9 85%,
+      #fff 90%,
+      #f9f9f9 95%,
+      #fff 100%
+      );
+  }
+  
+  .book::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: ' ';
+    width: 100px;
+    height: 150px;
+    transform: translateZ(-25px);
+    background-color: #01060f;
+    border-radius: 0 1px 1px 0;
+    box-shadow: -5px 0 25px 5px #666;
+  }

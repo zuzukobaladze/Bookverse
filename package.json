@@ -1,0 +1,28 @@
+{
+  "name": "bookverse-shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "author": "Zuzu Kobaladze",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "express": "^4.17.1",
+    "html-webpack-plugin": "^4.2.0",
+    "nodemon": "^2.0.6",
+    "slugify": "^1.4.6",
+    "sweetalert2": "^10.14.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
