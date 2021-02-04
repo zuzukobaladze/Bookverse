@@ -1,2 +1,2 @@
 # Bookverse
- website for book shop
+ website for book shopping
